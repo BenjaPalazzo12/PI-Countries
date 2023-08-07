@@ -1,0 +1,33 @@
+/* styles.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://www.xtrafondos.com/wallpapers/paisaje-nevado-en-el-bosque-arte-digital-9759.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.detailSpan {
+  color: black;
+  font-weight: bold;
+}
+
+.detailText {
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+}

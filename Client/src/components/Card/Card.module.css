@@ -1,0 +1,55 @@
+/* Card.module.css */
+
+/* Card.module.css */
+
+.contenedorCard {
+  background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  height: 200px;
+  text-align: left;
+  font-family: "Dancing Script", cursive;
+  margin: 0 10px;
+  /* Agregamos una transición suave */
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+
+.contenedorCard:hover {
+  transform: scale(1.1);
+}
+
+
+.imageContainer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedorCard p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilos para diferentes colores de tarjetas (monótonos y elegantes) */
+
+/* ... Tus estilos de colores ... */
+
+/* Estilos para enlaces (opcional) */
+
+/* ... Tus estilos de enlaces ... */

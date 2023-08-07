@@ -1,0 +1,30 @@
+/* SearchBar.module.css */
+
+.searchBar {
+  width: 70%; /* Ancho más corto */
+  max-width: 300px; /* Ancho máximo ajustado */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7dece;
+  border-radius: 10px; /* Redondear las esquinas */
+}
+
+/* Estilos para el contenido dentro de la barra de búsqueda (por ejemplo, el input) */
+.searchBar input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px; /* Redondear las esquinas */
+}
+
+.searchBar button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}

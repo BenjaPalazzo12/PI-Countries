@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homeContainer {
+  background-color: #f7dece;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.buttonHome {
+  background-color: #2d2e2c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+/* Estilos para el contador */
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Animación para el contador */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+p.fade-in-out {
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+
+.containerPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Estilos para la navegación de páginas */
+.pageNavigation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pageNavigation p {
+  margin: 0;
+}

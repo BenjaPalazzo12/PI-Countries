@@ -1,0 +1,24 @@
+.Landing {
+  background-image: url("https://www.xtrafondos.com/wallpapers/atardecer-en-paisaje-con-rocas-10869.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  height: 100vh;
+}
+
+h1 {
+  position: absolute; /* Cambiamos a posición absoluta */
+  top: 38%; /* Llevar el 50% desde arriba */
+  left: 50%; /* Llevar el 50% desde la izquierda */
+  transform: translate(-50%, -50%); /* Centramos el elemento en su propio centro */
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.buttonLanding {
+  position: absolute; /* Cambiamos a posición absoluta */
+  top: 50%; /* Llevar el 50% desde arriba */
+  left: 50%; /* Llevar el 50% desde la izquierda */
+  transform: translate(-50%, -50%); /* Centramos el elemento en su propio centro */
+  text-align: center;
+  color: #2d2e2c;
+}
