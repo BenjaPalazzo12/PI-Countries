@@ -44,14 +44,16 @@
   background-color: #2d2e2c;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  margin-right: 20px;
+  
 }
 
 .formContainer button:hover {
@@ -65,7 +67,7 @@
   justify-content: center; /* Centramos verticalmente */
   height: 100vh; /* Ajustamos la altura para que ocupe toda la pantalla */
   padding: 20px;
-  background-image: url(https://www.xtrafondos.com/wallpapers/volcan-junto-a-lago-11469.jpg);
+  background-image: url('https://www.xtrafondos.com/wallpapers/resized/rayo-en-paisaje-9125.jpg?s=large');
   background-size: cover;
   border-radius: 10px;
   margin: 0 auto; /* Centramos horizontalmente */

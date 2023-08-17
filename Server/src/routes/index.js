@@ -5,6 +5,7 @@ const getPaisByName = require("../controllers/Countries/getCountriesName");
 const postActividad = require("../controllers/Activities/postActivities");
 const getActividad = require("../controllers/Activities/getActivities");
 const deleteActividad = require("../controllers/Activities/deleteActivities");
+const updateActivities = require("../controllers/Activities/updateActivities");
 
 const router = Router();
 
@@ -14,6 +15,7 @@ router.get("/countries", getPaises);
 router.get("/countries/name", getPaisByName);
 router.get("/countries/:id", getPaisById);
 
+router.put("/activities/:id", updateActivities);
 router.get("/activities", getActividad);
 router.post("/activities", postActividad);
 router.delete("/activities/:nameActivity", deleteActividad);

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styles from "./Delete.module.css";
+import { Link } from "react-router-dom";
 
 const Delete = () => {
   const [Activity, setActivity] = useState("");
@@ -20,12 +22,12 @@ const Delete = () => {
       );
       alert(data.message);
     } catch (error) {
-      alert(error.message);
+      alert("Esta actividad no existe en la base de datos!");
     }
   };
 
   return (
-    <div>
+    <div className={styles.DeleteContainer}>
       <label htmlFor="Activity">Eliminar actividad: </label>
       <input
         onChange={handleChange}
@@ -34,6 +36,9 @@ const Delete = () => {
         value={Activity}
       />
       <button onClick={deleteActivity}>Eliminar</button>
+      <Link to="/home">
+        <button>Volver</button>
+      </Link>
     </div>
   );
 };

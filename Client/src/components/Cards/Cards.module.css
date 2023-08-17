@@ -4,3 +4,10 @@
   justify-items: center;
   align-items: center;
 }
+
+.FilterCards { 
+    display: flex;
+    justify-content: center;
+    margin: 20px; /* Ajusta el margen según tus necesidades */
+    height: 50px;
+  }

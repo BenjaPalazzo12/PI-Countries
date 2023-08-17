@@ -16,9 +16,20 @@ h1 {
 
 .buttonLanding {
   position: absolute; /* Cambiamos a posición absoluta */
-  top: 50%; /* Llevar el 50% desde arriba */
+  top: 50%; /* Ajusta la posición vertical según tus necesidades */
   left: 50%; /* Llevar el 50% desde la izquierda */
   transform: translate(-50%, -50%); /* Centramos el elemento en su propio centro */
   text-align: center;
-  color: #2d2e2c;
+  background-color: #2d2e2c; /* Mismo color que los otros botones */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonLanding:hover {
+  background-color: #c9302c; /* Cambio de color al pasar el mouse */
 }

@@ -2,13 +2,18 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-.homeContainer {
-  background-color: #f7dece;
+  height: 100%; /* Añadir esta línea */
+  background-image: url(https://www.xtrafondos.com/wallpapers/pinos-junto-al-rio-11579.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
+
+.homeContainer {
+  height: 100%
+  
+}
+
+
 
 .buttonHome {
   background-color: #2d2e2c;
@@ -24,6 +29,9 @@ body {
   display: inline-block;
 }
 
+
+
+
 button:hover {
   background-color: #c9302c;
 }
@@ -32,7 +40,7 @@ button:hover {
 p {
   text-align: center;
   font-size: 14px;
-  color: #888;
+  color: #000000;
 }
 
 /* Animación para el contador */
@@ -54,11 +62,11 @@ p.fade-in-out {
 
 .containerPage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Alinea los elementos en una columna */
+  justify-content: space-between; /* Espacio entre los elementos */
   align-items: center;
-  text-align: center;
-  gap: 10px;
-  justify-content: center;
+  height: 100%;
+  margin-bottom: 50px;
 }
 
 /* Estilos para la navegación de páginas */

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+.fondoError {
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("https://img.freepik.com/vector-premium/globo-dibujado-mano-ilustraciones-vectoriales-estilo-dibujado-mano_585108-137.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.errorTexto {
+
+    background-color: #111;
+    position: fixed;
+    display: flex;
+    margin-left: 38vw;
+    margin-top: 45vh;
+    width: 215px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}

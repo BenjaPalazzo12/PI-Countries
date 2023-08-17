@@ -1,6 +1,6 @@
 const initialState = {
   continentFilter: "",
-  sortOrder: "asc",
+  ORDER_BY_NAME: "asc",
   populationFilter: "asc",
 };
 
@@ -11,23 +11,15 @@ export const reducer = (state = initialState, action) => {
         ...state,
         continentFilter: action.payload,
       };
-
-    case "SET_ACTIVITY_FILTER":
-      return {
-        ...state,
-        activityFilter: action.payload,
-      };
-
-    case "SET_SORT_ORDER":
-      return {
-        ...state,
-        sortOrder: action.payload,
-      };
-
     case "SET_POPULATION_FILTER":
       return {
         ...state,
         populationFilter: action.payload,
+      };
+    case "SET_ORDER_BY_NAME":
+      return {
+        ...state,
+        ORDER_BY_NAME: action.payload,
       };
     default:
       return state;

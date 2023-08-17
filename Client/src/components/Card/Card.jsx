@@ -14,9 +14,9 @@ export default function Card({ id, flags, name, continents, population }) {
           <img src={flags} alt={name} />
         </Link>
       </div>
-      <p>Nombre:{name}</p>
-      <p>Continente:{continents}</p>
-      <p>Poblacion:{population}</p>
+      <p>Nombre: {name}</p>
+      <p>Continente: {continents}</p>
+      <p>Poblacion: {population}</p>
     </div>
   );
 }

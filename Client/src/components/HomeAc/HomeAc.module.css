@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center; /* Centramos verticalmente */
   height: 100vh; /* Ajustamos la altura para que ocupe toda la pantalla */
-  padding: 50px;
+  padding: 20px;
   background-color: #f7dece;
   border-radius: 10px;
   margin: 0 auto; /* Centramos horizontalmente */
@@ -37,7 +37,7 @@
 .formContainer p {
   font-size: 14px;
   margin-top: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .formContainer button {
@@ -58,33 +58,75 @@
   background-color: #c9302c;
 }
 
-.formPageContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Centramos verticalmente */
+.formPageContainer { 
   height: 100vh; /* Ajustamos la altura para que ocupe toda la pantalla */
   padding: 20px;
-  background-image: url(https://www.xtrafondos.com/wallpapers/volcan-junto-a-lago-11469.jpg);
+  background-image: url('../img/atardecer-en-chicago-323.jpg');
   background-size: cover;
-  border-radius: 10px;
   margin: 0 auto; /* Centramos horizontalmente */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
+
+.btnVolver {
+  margin-bottom: 20px;
+  background-color: #2d2e2c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+
 
 .formContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 150px;
+  padding: 100px;
   height: 550px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(255, 255, 255, 0.2);
   border-radius: 10px;
   backdrop-filter: blur(5px);
 
 }
+.contenedorCards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+}
 
-.errors {
-  color: black
+.buttonHome {
+  background-color: #2d2e2c ;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+
+
+.buttonHome:hover {
+  background-color: #c9302c;
+}
+
+/* Estilos para el contador */
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
 }

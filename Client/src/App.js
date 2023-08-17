@@ -6,8 +6,11 @@ import { useEffect, useState, useCallback } from "react";
 import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
 import Delete from "./components/Delete/Delete";
-import axios from "axios";
 import styles from "./App.css";
+import HomeAc from "./components/HomeAc/HomeAc";
+import ErrorPage from "./components/ErrorPage/errorPage";
+import Update from "./components/Update/Upadte.jsx";
+
 
 const App = () => {
   const [paises, setPaises] = useState([]);
@@ -29,16 +32,6 @@ const App = () => {
     obPaises();
   }, [obPaises]);
 
-  const onSearch = async (paises) => {
-    try {
-      const { data } = await axios(
-        `http://localhost:3001/countries/${paises.name}`
-      );
-      if (data.name) setPaises((oldPais) => [...oldPais, data]);
-    } catch (error) {
-      window.alert("No hay paises con este nombre!");
-    }
-  };
 
   return (
     <div className={styles.container}>
@@ -46,8 +39,11 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home paises={paises} />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/update/:activityId" element={<Update />} />
         <Route path="/form" element={<Form />} />
         <Route path="/delete" element={<Delete />} />
+        <Route path="/activities" element={<HomeAc />} />\
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

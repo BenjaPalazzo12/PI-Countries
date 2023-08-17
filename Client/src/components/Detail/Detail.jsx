@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
+import style from "../HomePage/Home.module.css";
 
 export default function Detail() {
   const { id } = useParams();
@@ -31,9 +32,11 @@ export default function Detail() {
   return (
     <div className={styles.container}>
       <div className={styles.contenedorInfo}>
-        <Link to={"/home"}>
-          <button className={styles.btnDetail}>Volver</button>
-        </Link>
+        <div className={style.buttonActivityContainer}>
+          <Link to={"/home"}>
+            <button className={style.buttonHome}>Volver</button>
+          </Link>
+        </div>
         <img src={paisDetail.flags} alt={paisDetail.name} />
 
         <p className={styles.detailText}>
